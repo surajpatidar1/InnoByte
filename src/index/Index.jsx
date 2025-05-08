@@ -48,14 +48,37 @@ const Index = () => {
                     Address:  Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</a>
                     </p><br />
                        <p><a href="#">Contact us: +91 9007062180</a></p>
+                       <button className='about-btn'>Book Now</button>
                 </div>
                
            </div>
        </div>
        
+               {/*Rooms*/ }
 
-
-
+        <div className="rooms">
+          <h3 className='room-head'>OUR LIVING ROOM<span> — </span></h3>
+          <p className='room-subhead'>The Most Memorable Rest <br />Time Starts Here.</p>
+          <div className="room-cards">
+            <div className="card">
+              <img src="/small.jpg" alt="" />
+              <p className='room-p'>Cozy Haven Room</p>
+              <p className='room-p2'>Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate relaxation. <br /><br />
+              Starting from  &nbsp; <span>Rs. 1000/night </span> </p>
+              <button className='room-btn'>Book Now</button>
+            </div>
+            <div className="card">
+              <img src="/room1.jpg" alt="" />
+              <p className='room-p'>Spacious Serenity Suite</p>
+              <p className='room-p2'>Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets elegance. <br /><br />
+              Starting from  &nbsp; <span>Rs. 1500/night</span></p>
+              <button className='room-btn'>Book Now</button>
+            </div>
+            
+          </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam labore dicta impedit doloremque aut placeat, facere eveniet sit nobis, molestiae cumque, totam modi voluptas commodi quam quisquam repellat dolore nihil!logo.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni et rem consequatur incidunt aliquid? Laboriosam nisi suscipit aperiam error! Ratione aspernatur culpa, sit odio perferendis ducimus beatae mollitia iure ..
+        </div>
 
 
 

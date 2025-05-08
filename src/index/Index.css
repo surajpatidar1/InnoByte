@@ -77,6 +77,7 @@ html {
     position: relative;
     top: 17%;
     left: 40%;
+    animation: fadeInUp 1s ease forwards;
 }
 .top{
     font-size: 1.5rem;
@@ -124,7 +125,7 @@ html {
    height: 15%;
    width: 35%;
    border-radius: 0.5rem;
-   animation: fadeInLeft 1s ease forwards;
+   animation: fadeInUp 1s ease forwards;
 }
 
 .img-div{
@@ -135,12 +136,12 @@ html {
 .about-content{
    width: 40%;
    margin: 2rem 1rem 0rem 10rem;
-   animation: fadeInRight 1s ease forwards;
+   
 }
 .about-content h3{
 font-size: 1rem ;
 font-weight: 300;
-
+animation: fadeInUp 1s ease forwards;
 }
 
 .about-content h3 span{
@@ -148,8 +149,9 @@ font-weight: 300;
 }
 .about-content .black{
  font-size: 2.7rem;
- font-weight: 400;
+ font-weight: 500;
  margin-top: 1rem;
+ animation: fadeInUp 6s ease forwards;
 }
 .about-content .white{
   color: #868181;
@@ -158,10 +160,20 @@ font-weight: 300;
   padding: 0.5rem;
   display: flex;
   text-align: justify;
+  animation: fadeInUp 3s ease forwards;
 }
 .about-content p a{
   text-decoration: none;
   color: #e90661;
+}
+.about-btn{
+  color: #ffffff;
+  background-color: #E82574;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  margin-top:1.5rem ;
 }
 @keyframes fadeInLeft {
   from {
@@ -183,4 +195,79 @@ font-weight: 300;
     opacity: 1;
     transform: translateX(0);
   }
+}
+@keyframes fadeInUP {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*rooms*/
+.room-head{
+  margin: 5rem 0rem 0rem 10rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.room-head span{
+  color: #E82574;
+  font-size: 1rem;
+}
+.room-subhead{
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 3rem 0rem 0rem 10rem;
+}
+.room-cards{
+  display: flex;
+ margin-left: 5rem;
+}
+.card {
+   box-shadow: 0.2rem 0.2rem 0.5rem rgb(126, 123, 123);
+   height: 35vw;
+   width: 55vh;
+   margin: 5rem 0rem 0rem 5rem;
+   border-radius: 0.5rem ;
+}
+.card img{
+  height: 20vw;
+  width: 55vh;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.room-p{
+  font-size: 1.2rem;
+  margin:  1rem 1rem;
+}
+.room-p2{
+  font-size: 1rem;
+  color: #868181;
+  padding: 1rem;
+}
+.room-p2 span{
+  color: #E82574;
+  font-weight: 500;
+}
+.room-btn{
+  color: #ffffff;
+  background-color: #E82574;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem;
 }
