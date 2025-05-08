@@ -3,6 +3,7 @@ import './Index.css'
 
 const Index = () => {
   return (
+    
     <div className='container'>
          <div className="home">
               <div className="header">
@@ -56,12 +57,18 @@ const Index = () => {
        
                {/*Rooms*/ }
 
-        <div className="rooms">
+        <div className="rooms" id='rooms'>
           <h3 className='room-head'>OUR LIVING ROOM<span> — </span></h3>
           <p className='room-subhead'>The Most Memorable Rest <br />Time Starts Here.</p>
           <div className="room-cards">
             <div className="card">
               <img src="/small.jpg" alt="" />
+              <div className='icon'>
+              <i className="fa-solid fa-heart" id='icon-1' />
+              <i className="fa-solid fa-fill" id='icon-2'></i>
+              <i className="fas fa-shield-alt" id='icon-3'></i>
+              </div>
+              
               <p className='room-p'>Cozy Haven Room</p>
               <p className='room-p2'>Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate relaxation. <br /><br />
               Starting from  &nbsp; <span>Rs. 1000/night </span> </p>
@@ -69,6 +76,23 @@ const Index = () => {
             </div>
             <div className="card">
               <img src="/room1.jpg" alt="" />
+              <div className='icon'>
+              <i className="fa-solid fa-heart" id='icon-1' />
+              <i className="fa-solid fa-fill" id='icon-2'></i>
+              <i className="fas fa-shield-alt" id='icon-3'></i>
+              </div>
+              <p className='room-p'>Spacious Serenity Suite</p>
+              <p className='room-p2'>Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets elegance. <br /><br />
+              Starting from  &nbsp; <span>Rs. 1500/night</span></p>
+              <button className='room-btn'>Book Now</button>
+            </div>
+            <div className="card">
+              <img src="/large.jpg" alt="" />
+              <div className='icon'>
+              <i className="fa-solid fa-heart" id='icon-1' />
+              <i className="fa-solid fa-fill" id='icon-2'></i>
+              <i className="fas fa-shield-alt" id='icon-3'></i>
+              </div>
               <p className='room-p'>Spacious Serenity Suite</p>
               <p className='room-p2'>Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets elegance. <br /><br />
               Starting from  &nbsp; <span>Rs. 1500/night</span></p>
@@ -76,14 +100,60 @@ const Index = () => {
             </div>
             
           </div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam labore dicta impedit doloremque aut placeat, facere eveniet sit nobis, molestiae cumque, totam modi voluptas commodi quam quisquam repellat dolore nihil!logo.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni et rem consequatur incidunt aliquid? Laboriosam nisi suscipit aperiam error! Ratione aspernatur culpa, sit odio perferendis ducimus beatae mollitia iure ..
+  
         </div>
 
+   {/**services */}
+        <div className="services" id='services'>
+          <div className="service-content">
+          <h3 className='service-head'>SERVICES &nbsp;&nbsp;<span>—</span></h3>
+          <p className='service-p'>Strive Only For The Best.</p>
+          <div className="service-icons">
+            <p><i class="fas fa-shield-alt" id='service-icon-1' ></i><p className='icon-p'>High Class Security</p><br /></p>
+            <p><i class="fas fa-headset" id='service-icon-2'></i><p  className='icon-p'>24 Hours Room Service</p><br /></p>
+            <p><i class="fa-solid fa-utensils" id='service-icon-3'></i><p  className='icon-p'>Restaurant</p><br /></p>
+            <p><i class="fa-solid fa-map" id='service-icon-4'></i><p  className='icon-p'>Tourist Guide Support</p><br /></p>
+          </div>
+          </div>
+        </div>
 
+        <div className="booking">
+          <div className="booking-content">
+            <p className='booking-p-1'>100+</p>
+            <p className='booking-p-2'>Bookings Completed</p>
+          </div>
+          <div className="booking-content">
+            <p className='booking-p-1'>150+</p>
+            <p className='booking-p-2'>Happy Customers</p>
+          </div>
+        </div>
+        
+            {/*gallary*/ }
 
+        <div className="gallary" id='gallary'>
+            <h3 className='gallary-head'>Gallary &nbsp;&nbsp;<span>—</span></h3>
+           <div className="gallary-images">
+             <div className="gallery-img">
+               <img src="/baranti.webp" alt="" id='id-1' />
+               <img src="/palash.webp" alt=""id='id-2' />
+               <img src="/flower.jpg" alt="" id='id-5' />
+               <img src="/ayodhya.webp" alt="" id='id-3'/>
+               <img src="/out.jpg" alt="" id='id-10' />
+               <img src="/1.jpg" alt="" id='id-4' />
+               <img src="/mithonDam.webp" alt="" id='id-6' />
+               <img src="/service.jpg" alt="" id='id-7' />
+               <img src="/header.jpg" alt="" id='id-8'/>
+               <img src="/recep.jpg" alt="" id='id-9' />
+           
+              </div>
+            </div>
+        </div>
+
+        {/**contact */}
+        
     </div>
-  )
-}
+  
+  );
+};
 
 export default Index

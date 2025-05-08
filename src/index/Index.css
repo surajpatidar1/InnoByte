@@ -77,17 +77,19 @@ html {
     position: relative;
     top: 17%;
     left: 40%;
-    animation: fadeInUp 1s ease forwards;
+    
 }
 .top{
     font-size: 1.5rem;
     font-weight: 400;
     color: #e6e0e0;
+    animation: fadeInUp 1s ease forwards;
 }
 .bottom{
     font-size: 4rem;
     font-weight: 550;
     margin-left: -12%;
+    animation: fadeInUp 3s ease forwards;
 }
 .content span{
     color: #E82574;
@@ -238,16 +240,20 @@ animation: fadeInUp 1s ease forwards;
  margin-left: 5rem;
 }
 .card {
-   box-shadow: 0.2rem 0.2rem 0.5rem rgb(126, 123, 123);
-   height: 35vw;
+   box-shadow: 3px 3px 2rem rgb(126, 123, 123);
+   height: 33.5vw;
    width: 55vh;
-   margin: 5rem 0rem 0rem 5rem;
+   margin: 5rem 0rem 0rem 3rem;
    border-radius: 0.5rem ;
+   position: relative;
 }
 .card img{
   height: 20vw;
   width: 55vh;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.card img:hover{
+  transform: scale(1.03);
 }
 .room-p{
   font-size: 1.2rem;
@@ -256,7 +262,8 @@ animation: fadeInUp 1s ease forwards;
 .room-p2{
   font-size: 1rem;
   color: #868181;
-  padding: 1rem;
+padding:  0rem 1rem;
+  
 }
 .room-p2 span{
   color: #E82574;
@@ -271,3 +278,187 @@ animation: fadeInUp 1s ease forwards;
   font-size: 1.2rem;
   margin: 0.5rem;
 }
+.icon {
+  position: absolute;
+  bottom: 43%;
+  right: 10px;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+
+
+}
+
+.icon i {
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+#icon-1{
+  color: #ff91bd;
+}
+#icon-2{
+  color: rgb(229, 153, 229);
+}
+#icon-3{
+  color: rgb(103, 219, 251);
+}
+
+/** services */
+.services{
+  background-image: url("/service.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 35vw;
+  margin-top: 5rem;
+  position: relative;
+}
+.service-content{
+background-color: #ffffff;
+height: 35vw;
+width: 40%;
+position: absolute;
+left: 40%;
+}
+.service-head{
+  margin: 2rem 0rem 0rem 5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.service-content span{
+  color: #E82574;
+  font-size: 1rem;
+}
+.service-p{
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 1rem;
+  margin-left: 3.5rem;
+}
+.service-icons i{
+ font-size: 1.5rem;
+ margin: 1rem 0rem 0rem 5rem;
+}
+#service-icon-1{
+   background-color: rgb(203, 244, 255);
+   color: rgb(22, 136, 136);
+}
+#service-icon-1 , #service-icon-2, #service-icon-3, #service-icon-4{
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+#service-icon-2{
+  background-color: pink;
+  color: rgb(233, 102, 124);
+}
+#service-icon-3{
+  color: rgb(216, 74, 216);
+  background-color: rgb(255, 168, 255);
+}
+#service-icon-4{
+  color: rgb(247, 96, 96);
+  background-color: rgb(247, 190, 190);
+  font-size: 1.5rem;
+  padding: 0.5rem
+}
+.service-icons p{
+  display: flex;
+  margin-top: 1rem;
+}
+.icon-p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 1.5rem 0rem 0rem 2rem ;
+  display: flex;
+  justify-content: start;
+}
+
+/** middle*/
+.booking{
+  height: 9vw;
+  width: 78%;
+  box-shadow: 3px 3px 10px rgb(137, 135, 135);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5rem 0rem 0rem 11rem;
+}
+
+.booking-p-2{
+  color: #807c7c;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.booking-p-1{
+  margin: 0rem 0rem 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+/*gallary*/
+
+.gallary-head{
+  margin: 2rem 0rem 5rem 35rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.gallary-head span{
+  color: #E82574;
+  font-size: 1rem;
+}
+.gallary{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
+ 
+  padding: 5rem;
+}
+.gallary-img{
+ 
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-img img:hover {
+  transform: scale(1.03);
+}
+.gallery-img img {
+  height: 20vw;
+  width: 55vh;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+#id-1{
+   height: 20vw;
+   width: 50%;
+}
+#id-2{
+  height: 20vw;
+  width: 45%;
+}
+#id-3{
+  width: 45%;
+}
+#id-10{
+  height: 20vw;
+  width: 20%;
+}
+#id-4{
+  height: 22vw;
+  width: 55%;
+}
+#id-6{
+width: 40%;
+}
+#id-7 , #id-8 , #id-9{
+  width: 32%;
+}
+
+/** contact*/
