@@ -289,21 +289,21 @@ padding:  0rem 1rem;
 
 }
 
-.icon i {
-  font-size: 1.3rem;
+.icon-1 , .icon-2, .icon-3{
+  font-size: 2.5rem;
   cursor: pointer;
   background-color: #ffffff;
   padding: 0.5rem;
   border-radius: 2rem;
 }
-#icon-1{
-  color: #ff91bd;
+.icon-1{
+  color: #fa7cae;
 }
-#icon-2{
-  color: rgb(229, 153, 229);
+.icon-2{
+  color: rgb(231, 133, 231);
 }
-#icon-3{
-  color: rgb(103, 219, 251);
+.icon-3{
+  color: rgb(78, 209, 245);
 }
 
 /** services */
@@ -337,31 +337,28 @@ left: 40%;
   padding: 1rem;
   margin-left: 3.5rem;
 }
-.service-icons i{
- font-size: 1.5rem;
- margin: 1rem 0rem 0rem 5rem;
-}
-#service-icon-1{
+
+.service-icon-1{
    background-color: rgb(203, 244, 255);
    color: rgb(22, 136, 136);
 }
-#service-icon-1 , #service-icon-2, #service-icon-3, #service-icon-4{
+.service-icon-1 , .service-icon-2, .service-icon-3, .service-icon-4{
   padding: 0.5rem;
   border-radius: 2rem;
+  font-size: 2.8rem;
+  margin: 0.5rem 0rem 0rem 3rem;
 }
-#service-icon-2{
+.service-icon-2{
   background-color: pink;
   color: rgb(233, 102, 124);
 }
-#service-icon-3{
+.service-icon-3{
   color: rgb(216, 74, 216);
   background-color: rgb(255, 168, 255);
 }
-#service-icon-4{
+.service-icon-4{
   color: rgb(247, 96, 96);
   background-color: rgb(247, 190, 190);
-  font-size: 1.5rem;
-  padding: 0.5rem
 }
 .service-icons p{
   display: flex;
@@ -402,8 +399,8 @@ left: 40%;
 
 .gallary-head{
   margin: 2rem 0rem 5rem 35rem;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 .gallary-head span{
   color: #E82574;
@@ -433,7 +430,7 @@ left: 40%;
   width: 55vh;
   transition: transform 0.3s ease, filter 0.3s ease;
   border-radius: 0.5rem;
-  margin: 0.5rem;
+  margin: 0.2rem;
 }
 #id-1{
    height: 20vw;
@@ -462,3 +459,116 @@ width: 40%;
 }
 
 /** contact*/
+.contact {
+  display: flex;
+  justify-content: center; /* horizontally center */
+}
+.contact-left{
+  width: 25%;
+  background-color: #E82574;
+  border-radius: 2rem;
+  height: 33vw;
+  margin-right: -12rem;
+  margin-top: -1rem;
+}
+.contact-icon{
+  font-size: 2.5rem;
+  color: #dddada;
+margin: -0.4rem 1rem 0rem 2rem ;
+}
+.contact-p {
+  font-size: 1rem;
+display: flex;
+color: #ffffff;
+margin: 2rem 0rem 0rem 0rem;
+
+}
+.contact-footer{
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 600;
+  gap: 1rem;
+  margin: 8rem 1rem 0.5rem 7rem;
+  color: #ffffff;
+}
+.contact-head{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 5rem 0rem 1rem 3rem ;
+}
+.input-wrapper {
+  position: relative;
+  margin: 2rem 0rem 0rem 3rem ;
+  
+}
+.contact-element{
+  margin-left: 10rem;
+}
+.contact-form{
+  height: 33vw;
+  box-shadow: 0.3rem 0.3rem 0.2rem rgb(137, 135, 135);
+  width: 60%;
+  border-radius: 0rem 1rem 1rem 1rem;
+}
+.input-wrapper input,
+.input-wrapper textarea {
+  width: 70%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+}
+#textarea {
+  width: 80%;
+}
+
+.input-wrapper span {
+position: absolute;
+  left: 1rem;
+  top: 1rem;
+  color: #545454;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  pointer-events: none;
+ 
+}
+input,textarea:focus {
+  border-color: #E82574;
+  outline:none;
+}
+.row {
+  margin-top: 0.5rem;
+  display: flex;
+}
+
+/* When input is focused or has content */
+.input-wrapper input:focus + span,
+.input-wrapper input:not(:placeholder-shown) + span,
+.input-wrapper textarea:focus + span,
+.input-wrapper textarea:not(:placeholder-shown) + span {
+  top: -10px;
+  left: 0.3rem;
+  font-size: 1rem;
+  color: #E82574;
+  background: #fff;
+  padding: 0 5px;
+}
+.contact-btn{
+  color: #ffffff;
+  background-color: #E82574;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  margin: 3rem 5rem 10rem 15rem;
+  width: 25%;
+}
+.form-head{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #E82574;
+  margin: 2rem 20rem; 
+}
+
+
+

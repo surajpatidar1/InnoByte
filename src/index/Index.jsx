@@ -1,10 +1,23 @@
 import React from 'react'
 import './Index.css'
+import { FaHeart } from "react-icons/fa";
+import { FaFillDrip } from "react-icons/fa6";
+import { RiShieldStarFill } from "react-icons/ri";
+import { TbHours24 } from "react-icons/tb";
+import { IoMdRestaurant } from "react-icons/io";
+import { FaMapLocationDot } from "react-icons/fa6";
+import { BsFillPinMapFill } from "react-icons/bs";
+import { IoIosMailOpen } from "react-icons/io";
+import { MdPhoneInTalk } from "react-icons/md";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
 
 const Index = () => {
   return (
     
-    <div className='container'>
+<div className='container'>
          <div className="home">
               <div className="header">
                   <div >
@@ -64,9 +77,9 @@ const Index = () => {
             <div className="card">
               <img src="/small.jpg" alt="" />
               <div className='icon'>
-              <i className="fa-solid fa-heart" id='icon-1' />
-              <i className="fa-solid fa-fill" id='icon-2'></i>
-              <i className="fas fa-shield-alt" id='icon-3'></i>
+             <FaHeart className='icon-1'/>
+             <FaFillDrip className='icon-2'/>
+             <RiShieldStarFill className='icon-3'/>
               </div>
               
               <p className='room-p'>Cozy Haven Room</p>
@@ -77,9 +90,9 @@ const Index = () => {
             <div className="card">
               <img src="/room1.jpg" alt="" />
               <div className='icon'>
-              <i className="fa-solid fa-heart" id='icon-1' />
-              <i className="fa-solid fa-fill" id='icon-2'></i>
-              <i className="fas fa-shield-alt" id='icon-3'></i>
+              <FaHeart className='icon-1'/>
+             <FaFillDrip className='icon-2'/>
+             <RiShieldStarFill className='icon-3'/>
               </div>
               <p className='room-p'>Spacious Serenity Suite</p>
               <p className='room-p2'>Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets elegance. <br /><br />
@@ -89,9 +102,9 @@ const Index = () => {
             <div className="card">
               <img src="/large.jpg" alt="" />
               <div className='icon'>
-              <i className="fa-solid fa-heart" id='icon-1' />
-              <i className="fa-solid fa-fill" id='icon-2'></i>
-              <i className="fas fa-shield-alt" id='icon-3'></i>
+              <FaHeart className='icon-1'/>
+             <FaFillDrip className='icon-2'/>
+             <RiShieldStarFill className='icon-3'/>
               </div>
               <p className='room-p'>Spacious Serenity Suite</p>
               <p className='room-p2'>Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets elegance. <br /><br />
@@ -109,10 +122,10 @@ const Index = () => {
           <h3 className='service-head'>SERVICES &nbsp;&nbsp;<span>—</span></h3>
           <p className='service-p'>Strive Only For The Best.</p>
           <div className="service-icons">
-            <p><i class="fas fa-shield-alt" id='service-icon-1' ></i><p className='icon-p'>High Class Security</p><br /></p>
-            <p><i class="fas fa-headset" id='service-icon-2'></i><p  className='icon-p'>24 Hours Room Service</p><br /></p>
-            <p><i class="fa-solid fa-utensils" id='service-icon-3'></i><p  className='icon-p'>Restaurant</p><br /></p>
-            <p><i class="fa-solid fa-map" id='service-icon-4'></i><p  className='icon-p'>Tourist Guide Support</p><br /></p>
+            <p><RiShieldStarFill className='service-icon-1'/><p className='icon-p'>High Class Security</p><br /></p>
+            <p><TbHours24 className='service-icon-2'/><p  className='icon-p'>24 Hours Room Service</p><br /></p>
+            <p><IoMdRestaurant className='service-icon-3'/><p  className='icon-p'>Restaurant</p><br /></p>
+            <p><FaMapLocationDot className='service-icon-4'/><p  className='icon-p'>Tourist Guide Support</p><br /></p>
           </div>
           </div>
         </div>
@@ -150,8 +163,85 @@ const Index = () => {
         </div>
 
         {/**contact */}
-        
-    </div>
+        <div className="contact">
+           <div className="contact-left">
+            <h1 className='contact-head'>Contact Info</h1>
+            <p className='contact-p'><BsFillPinMapFill className='contact-icon'/> <span>Beside Barshal Water Tank,Manpur, Barhanti,West Bengal 723156</span></p>
+            <p className='contact-p'><IoIosMailOpen className='contact-icon'/><span>kkghosh0099@gmail.com </span></p>
+            <p className='contact-p'><MdPhoneInTalk className='contact-icon'/> <span>+91 9007062180</span></p>
+            <div className="contact-footer">
+              <FaFacebook className='contact-footer-icon'/>
+              <FaInstagram className='contact-footer-icon'/>
+              <FaXTwitter className='contact-footer-icon'/>
+              <FaLinkedinIn className='contact-footer-icon'/>
+            </div>
+           </div>
+           <div className="contact-form">
+              <h2 className='form-head'>Send a Message</h2>
+             <div className="row">
+              <div className="contact-element">
+                 <div className="input-wrapper">
+                    <input
+                         type="text" 
+                         placeholder='' 
+                         required />
+                    <span>First Name</span>
+                    <hr />
+                 </div>
+              </div>
+
+              <div className="contact-element">
+                   <div className="input-wrapper">
+                      <input
+                           type="text" 
+                           placeholder='' 
+                           required />
+                      <span>Last Name</span>
+                      <hr />
+                   </div>
+              </div>
+             </div>
+             <div className="row">
+              <div className="contact-element">
+                 <div className="input-wrapper">
+                   <input 
+                        type="email" 
+                        placeholder=''
+                         required />
+                   <span>Email Address</span>
+                   <hr />
+                </div>
+             </div>
+
+             <div className="contact-element">
+               <div className="input-wrapper">
+                 <input 
+                      type="text" 
+                      placeholder='' 
+                       required />
+                 <span>Mobile Number</span>
+                 <hr />
+               </div>
+             </div> 
+            </div>
+             <div className="contact-element">
+               <div className="input-wrapper " id='textarea'>
+                  <textarea 
+                  name="message" 
+                  placeholder='' 
+                  required></textarea>
+                  <span>Write Something...</span>
+                  <hr />
+               </div>
+             </div>
+
+             <div className="contact-element">
+                 <button type='Submit' className='contact-btn'>Send</button>
+             </div>
+           </div>
+
+          </div>
+</div>
   
   );
 };
