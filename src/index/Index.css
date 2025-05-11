@@ -1,37 +1,5 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
- 
-}
-html {
-  scroll-behavior: smooth;
-}
 
 
-.header{
-     display: flex;
-}
-.home{
-    background-image: url("/ayodhya.webp");
-    height: 45vw;
-    background-position: center;
-     background-size: cover;
-}
-.logo{
-    height: 5rem;
-    width: 5rem;
-    border-radius: 5rem;
-    margin: 2rem;
-}
-.option ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem 20rem;
-  }
   
   .option ul a {
     position: relative;
@@ -58,162 +26,13 @@ html {
     width: 100%;
   }
   
-.header-btn{
-  color: #ffffff;
-  background-color: #E82574;
-  border: none;
-  padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  margin-right: 5rem;
-}
-.left{
-  margin-left: auto;
-  margin-right: 2rem;
-}
-.content {
-    color: #ffffff;
-    position: relative;
-    top: 17%;
-    left: 40%;
-    
-}
-.top{
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #e6e0e0;
- 
-}
-.bottom{
-    font-size: 4rem;
-    font-weight: 550;
-    margin-left: -12%;
 
-}
-.content span{
-    color: #E82574;
-    font-weight: 550;
-}
-
-/* fly*/
-
-.fly{
-    width: 80%;
-    height: 15%;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
-    position: relative;
-    top: 45%;
-    left: 50%;
-  transform: translateX(-50%);
-    box-shadow: 0rem 0.5rem 1rem #9f9c9c;
-}
-.fly-btn{
-    color: #ffffff;
-  background-color: #E82574;
-  border: none;
-  padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  
-}
-
-/*about*/
-.img{
-   height: 15%;
-   width: 35%;
-   border-radius: 0.5rem;
- 
-}
-
-.img-div{
-  margin: 10rem auto 0 auto;
-  max-width: 80%;
-    display: flex;
-}
-.about-content{
-   width: 40%;
-   margin: 2rem 1rem 0rem 10rem;
-   
-}
-.about-content h3{
-font-size: 1rem ;
-font-weight: 300;
-
-}
-
-.about-content h3 span{
-    color: #E82574;
-}
-.about-content .black{
- font-size: 2.7rem;
- font-weight: 500;
- margin-top: 1rem;
- 
-}
-.about-content .white{
-  color: #868181;
-  font-size: 1.1rem;
-  font-size: 300;
-  padding: 0.5rem;
-  display: flex;
-  text-align: justify;
-
-}
-.about-content p a{
-  text-decoration: none;
-  color: #e90661;
-}
-.about-btn{
-  color: #ffffff;
-  background-color: #E82574;
-  border: none;
-  padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  margin-top:1.5rem ;
-}
 
 
 /*rooms*/
-.room-head{
-  margin: 5rem 0rem 0rem 10rem;
-  font-size: 1rem;
-  font-weight: 400;
-}
-.room-head span{
-  color: #E82574;
-  font-size: 1rem;
-}
-.room-subhead{
-  font-size: 3rem;
-  font-weight: 600;
-  margin: 3rem 0rem 0rem 10rem;
-}
-.room-cards{
-  display: flex;
- margin-left: 5rem;
-}
-.card {
-   box-shadow: 3px 3px 2rem rgb(126, 123, 123);
-   height: 33.5vw;
-   width: 55vh;
-   margin: 5rem 0rem 0rem 3rem;
-   border-radius: 0.5rem ;
-   position: relative;
-}
-.card img{
-  height: 20vw;
-  width: 55vh;
-  border-radius: 0.5rem 0.5rem 0rem 0rem;
-}
-.card img:hover{
-  transform: scale(1.03);
-}
+
+
+
 .room-p{
   font-size: 1.2rem;
   margin:  1rem 1rem;
@@ -237,17 +56,6 @@ padding:  0rem 1rem;
   font-size: 1.2rem;
   margin: 0.5rem;
 }
-.icon {
-  position: absolute;
-  bottom: 43%;
-  right: 10px;
-  z-index: 2;
-  display: flex;
-  gap: 10px;
-
-
-}
-
 .icon-1 , .icon-2, .icon-3{
   font-size: 2.5rem;
   cursor: pointer;
@@ -271,36 +79,7 @@ padding:  0rem 1rem;
 }
 
 /** services */
-.services{
-  background-image: url("/service.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 35vw;
-  margin-top: 5rem;
-  position: relative;
-}
-.service-content{
-background-color: #ffffff;
-height: 35vw;
-width: 40%;
-position: absolute;
-left: 40%;
-}
-.service-head{
-  margin: 2rem 0rem 0rem 5rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-.service-content span{
-  color: #E82574;
-  font-size: 1rem;
-}
-.service-p{
-  font-size: 3rem;
-  font-weight: 500;
-  padding: 1rem;
-  margin-left: 3.5rem;
-}
+
 
 .service-icon-1{
    background-color: rgb(203, 244, 255);
@@ -337,66 +116,19 @@ left: 40%;
   justify-content: start;
 }
 
-/** middle*/
-.booking{
-  height: 9vw;
-  width: 78%;
-  box-shadow: 3px 3px 10px rgb(137, 135, 135);
-  border-radius: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 5rem 0rem 0rem 11rem;
-}
-
-.booking-p-2{
-  color: #807c7c;
-  font-weight: 400;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-.booking-p-1{
-  margin: 0rem 0rem 1rem 3rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
 /*gallary*/
 
-.gallary-head{
-  margin: 2rem 0rem 5rem 35rem;
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-.gallary-head span{
-  color: #E82574;
-  font-size: 1rem;
-}
 .gallary{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
  
   padding: 5rem;
 }
-.gallary-img{
- 
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .gallery-img img:hover {
   transform: scale(1.03);
 }
-.gallery-img img {
-  height: 20vw;
-  width: 55vh;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  border-radius: 0.5rem;
-  margin: 0.2rem;
-}
+
 #id-1{
    height: 20vw;
    width: 50%;
@@ -424,57 +156,11 @@ width: 40%;
 }
 
 /** contact*/
-.contact {
-  display: flex;
-  justify-content: center; /* horizontally center */
-}
-.contact-left{
-  width: 25%;
-  background-color: #E82574;
-  border-radius: 2rem;
-  height: 33vw;
-  margin-right: -12rem;
-  margin-top: -1rem;
-}
-.contact-icon{
-  font-size: 2.5rem;
-  color: #dddada;
-margin: -0.4rem 1rem 0rem 2rem ;
-}
-.contact-p {
-  font-size: 1rem;
-display: flex;
-color: #ffffff;
-margin: 2rem 0rem 0rem 0rem;
 
-}
-.contact-footer{
-  display: flex;
-  font-size: 1.5rem;
-  font-weight: 600;
-  gap: 1rem;
-  margin: 8rem 1rem 0.5rem 7rem;
-  color: #ffffff;
-}
-.contact-head{
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #ffffff;
-  margin: 5rem 0rem 1rem 3rem ;
-}
 .input-wrapper {
   position: relative;
   margin: 2rem 0rem 0rem 3rem ;
   
-}
-.contact-element{
-  margin-left: 10rem;
-}
-.contact-form{
-  height: 33vw;
-  box-shadow: 0.5rem 1rem 1rem rgb(137, 135, 135);
-  width: 60%;
-  border-radius: 0rem 1rem 1rem 1rem;
 }
 .input-wrapper input,
 .input-wrapper textarea {
@@ -501,10 +187,7 @@ input,textarea:focus {
   border-color: #E82574;
   outline:none;
 }
-.row {
-  margin-top: 0.5rem;
-  display: flex;
-}
+
 
 /* When input is focused or has content */
 .input-wrapper input:focus + span,
@@ -518,106 +201,10 @@ input,textarea:focus {
   background: #fff;
   padding: 0 5px;
 }
-.contact-btn{
-  color: #ffffff;
-  background-color: #E82574;
-  border: none;
-  padding: 0.8rem 1.2rem;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  margin: 3rem 5rem 10rem 15rem;
-  width: 25%;
-}
-.form-head{
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #E82574;
-  margin: 2rem 20rem; 
-}
 
-/** map*/
-.map{
-width: 95%;
- height: 25vw;
- display: flex;
- justify-content: center;
- align-items: center;
- border-radius: 2rem;
- box-shadow: 0.5rem 0.5rem 1rem rgb(142, 140, 140);
- margin: 5rem 3rem 3rem 2rem;
-}
-.map-frame{
-  border-radius: 0.5rem;
-}
 
-/**footer*/
-.footer{
-  background-color: #E82574;
-  color: #ffffff;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 30vw;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-.footer p{
-  margin-bottom: 0.5rem;
-   opacity: 0.7;
-}
-.footer p:hover{
-  opacity: 1;
-}
-.footer-info img{
-   width: 6rem;
-   border-radius: 5rem;
-   margin: 0rem 0rem 1rem 5rem;
-}
-.footer-info p{
-  width: 20rem;
-}
-.footer-info-btn{
-  color: #E82574;
-  background-color: #ffffff;
-  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  width: 35%;
-  margin: 1rem 3rem;
-  border: none;
-}
- .footer-heading{
-  margin-bottom: 2rem;
-   font-size: 1.4rem;
- }
- a{
-  text-decoration: none;
-  color: #ffffff;
- }
- .footer-links{
-  margin-bottom: 2rem;
- }
- .footer-services{
-  margin-bottom: 3.5rem;
- }
- .footer-contacts{
-  width: 20rem;
- }
- .footer-social img{
-  width: 2rem;
-  border-radius: 0.5rem;
-  margin: 0.3rem;
- }
- .copyright{
-  font-size: 1.2rem;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  background-color: #E82574;
- }
+ 
+ /** footer*/
  #hover:hover{
   background-color: #E82574;
   opacity: 0.8;
