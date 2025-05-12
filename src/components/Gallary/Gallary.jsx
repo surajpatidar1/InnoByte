@@ -1,29 +1,26 @@
 import React from 'react'
+import './Gallary.css'
 
 const Gallary = () => {
   return (
-    <div>
-      
-        <div className="" id='gallary'>
-            <h3 className='text-lg ml-5 mt-5 ' data-aos="fade-left">Gallary &nbsp;&nbsp;<span className='text-primaryPink'>—</span></h3>
-           <div className="gallary-images">
-             <div className="">
-               <img src="/baranti.webp" alt=""  data-aos="fade-left" className='w-[50vh] rounded-lg mx-auto mb-3 ' />
-               <img src="/palash.webp" alt="" data-aos="fade-right" className='w-[50vh] rounded-lg mx-auto mb-3' />
-               <img src="/flower.jpg" alt="" data-aos="fade-up"  className='w-[50vh] rounded-lg mx-auto mb-3'/>
-               <img src="/ayodhya.webp" alt=""  data-aos="fade-up" className='w-[50vh] rounded-lg mx-auto mb-3'/>
-               <img src="/out.jpg" alt=""  data-aos="fade-up" className='w-[50vh] rounded-lg mx-auto mb-3'/>
-               <img src="/1.jpg" alt="" data-aos="fade-up" className='w-[50vh] rounded-lg mx-auto mb-3' />
-               <img src="/mithonDam.webp" alt=""  data-aos="fade-up" className='w-[50vh] rounded-lg mx-auto mb-3' />
-               <img src="/service.jpg" alt=""  data-aos="fade-right" className='w-[50vh] rounded-lg mx-auto mb-3' />
-               <img src="/header.jpg" alt="" data-aos="fade-up"  className='w-[50vh] rounded-lg mx-auto mb-3'/>
-               <img src="/recep.jpg" alt=""  data-aos="fade-left"  className='w-[50vh] rounded-lg mx-auto mb-3'/>
-           
-              </div>
+    <div className="gallary" id='gallary'>
+                <h3 className='gallary-head' data-aos="fade-left">Gallary &nbsp;&nbsp;<span>—</span></h3>
+               <div className="gallary-images">
+                 <div className="gallery-img">
+                   <img src="/baranti.webp" alt="" id='id-1' data-aos="fade-left" />
+                   <img src="/palash.webp" alt=""id='id-2' data-aos="fade-right" />
+                   <img src="/flower.jpg" alt="" id='id-5'data-aos="fade-up" />
+                   <img src="/ayodhya.webp" alt="" id='id-3' data-aos="fade-up"/>
+                   <img src="/out.jpg" alt="" id='id-10' data-aos="fade-up"/>
+                   <img src="/1.jpg" alt="" id='id-4' data-aos="fade-up" />
+                   <img src="/mithonDam.webp" alt="" id='id-6' data-aos="fade-up" />
+                   <img src="/service.jpg" alt="" id='id-7' data-aos="fade-right" />
+                   <img src="/header.jpg" alt="" id='id-8'data-aos="fade-up" />
+                   <img src="/recep.jpg" alt="" id='id-9' data-aos="fade-left" />
+               
+                  </div>
+                </div>
             </div>
-        </div>
-
-    </div>
   )
 }
 

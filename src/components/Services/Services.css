@@ -1,0 +1,178 @@
+.services{
+  background-image: url("/service.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 35vw;
+  margin-top: 5rem;
+  position: relative;
+}
+.service-content{
+background-color: #ffffff;
+height: 35vw;
+width: 40%;
+position: absolute;
+left: 40%;
+}
+.service-head{
+  margin: 2rem 0rem 0rem 5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.service-content span{
+  color: #E82574;
+  font-size: 1rem;
+}
+.service-p{
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 1rem;
+  margin-left: 3.5rem;
+}
+
+.service-icon-1{
+   background-color: rgb(203, 244, 255);
+   color: rgb(22, 136, 136);
+}
+.service-icon-1 , .service-icon-2, .service-icon-3, .service-icon-4{
+  padding: 0.5rem;
+  border-radius: 2rem;
+  font-size: 2.8rem;
+  margin: 0.5rem 0rem 0rem 3rem;
+}
+
+.service-icon-2{
+  background-color: pink;
+  color: rgb(233, 102, 124);
+}
+.service-icon-3{
+  color: rgb(216, 74, 216);
+  background-color: rgb(255, 168, 255);
+}
+.service-icon-4{
+  color: rgb(247, 96, 96);
+  background-color: rgb(247, 190, 190);
+}
+.service-icons p{
+  display: flex;
+  margin-top: 1rem;
+}
+.icon-p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 1.5rem 0rem 0rem 2rem ;
+  display: flex;
+  justify-content: start;
+}
+/** middle*/
+.booking{
+  height: 9vw;
+  width: 78%;
+  box-shadow: 3px 3px 10px rgb(137, 135, 135);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5rem 0rem 0rem 11rem;
+}
+
+.booking-p-2{
+  color: #807c7c;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.booking-p-1{
+  margin: 0rem 0rem 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (max-width:768px) {
+  .services{
+  height: 60vh;
+}
+.service-content{
+background-color: #ffffff;
+height: 40vw;
+width: 80%;
+position: relative;
+left: 2rem;
+top: 5rem;
+border-radius: 2rem;
+}
+.service-p{
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1rem;
+  margin-left: 3.5rem;
+}
+.service-icon-1 , .service-icon-2, .service-icon-3, .service-icon-4{
+  padding: 0.5rem;
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  margin: 0rem 0rem 0rem 3rem;
+}
+.icon-p{
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0rem 0rem 0rem 1rem ;
+  display: flex;
+  justify-content: start;
+}
+.service-icons p{
+  display: flex;
+  margin-top: 0.5rem;
+}
+.booking{
+  height: 50vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0rem 0rem 8rem;
+}
+
+.booking-p-2{
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.booking-p-1{
+  margin: 0rem 0rem 1rem 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+}
+@media (max-width:480px) {
+  
+.service-content{
+height: 57vh;
+width: 80%;
+top: 0.5rem;
+}
+.service-p{
+  font-size: 1.3rem;
+}
+.service-icon-1 , .service-icon-2, .service-icon-3, .service-icon-4{
+  padding: 0.5rem;
+  border-radius: 2rem;
+  font-size: 2.3rem;
+}
+.icon-p{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.booking{
+  height: 50vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0rem 0rem 3rem;
+}
+
+.booking-p-2{
+  font-size: 1.3rem;
+}
+.booking-p-1{
+  font-size: 2.5rem;
+}
+
+}

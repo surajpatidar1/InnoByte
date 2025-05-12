@@ -1,5 +1,39 @@
-
-
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+ 
+}
+html {
+  scroll-behavior: smooth;
+}
+.header{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-items: center;
+     gap: 5px;
+}
+.home{
+    background-image: url("/ayodhya.webp");
+    height: 45vw;
+    background-position: center;
+     background-size: cover;
+     position: relative;
+}
+.logo{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5rem;
+    margin: 2rem;
+}
+.option ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center; 
+  }
   
   .option ul a {
     position: relative;
@@ -26,186 +60,107 @@
     width: 100%;
   }
   
-
-
-
-/*rooms*/
-
-
-
-.room-p{
-  font-size: 1.2rem;
-  margin:  1rem 1rem;
-}
-.room-p2{
-  font-size: 1rem;
-  color: #868181;
-padding:  0rem 1rem;
-  
-}
-.room-p2 span{
-  color: #E82574;
-  font-weight: 500;
-}
-.room-btn{
+.header-btn,.fly-btn{
   color: #ffffff;
   background-color: #E82574;
   border: none;
-  padding: 0.8rem 1.2rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   font-size: 1.2rem;
-  margin: 0.5rem;
+ 
 }
-.icon-1 , .icon-2, .icon-3{
-  font-size: 2.5rem;
-  cursor: pointer;
-  background-color: #ffffff;
-  padding: 0.5rem;
-  border-radius: 2rem;
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.icon-1:hover,
-.icon-2:hover,
-.icon-3:hover {
-  transform: scale(1.20);
+.content{
+  margin: 5rem 0rem 0rem 0rem;
 }
-.icon-1{
-  color: #fa7cae;
+.top{
+  font-size: 1.8rem ;
+  color: #ddd4d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.icon-2{
-  color: rgb(231, 133, 231);
+.bottom{
+  font-size: 5rem;
+  color: #ffffff;
+  font-weight: 600
 }
-.icon-3{
-  color: rgb(78, 209, 245);
+.bottom span{
+  color: #E82574;
 }
 
+
+
+/* fly*/
+
+.fly{
+  position:absolute;
+    width: 80%;
+    height: 15%;
+     left: 10%;
+     bottom: -4rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0rem 0.5rem 1rem #9f9c9c;
+}
+
+
+
+
+/* responsive */
+@media (max-width:768px) {
+  .top{
+  font-size: 1rem ;
+  color: #ddd4d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom{
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 600
+}
+.home{
+    height: 80vw;
+}
+.header-btn{
+  display: none;
+}
+
+}
+@media (max-width:480px) {
+  
+  .option ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    list-style: none;
+    justify-content: center;
+    align-items: start; 
+  }
+  .header{
+background-color: #E82574;
+  }
+  .home{
+    height: 80vh;
+    
+  }
+  .bottom{
+    font-size: 2rem;
+  }
+}
+/*about*/
 /** services */
 
-
-.service-icon-1{
-   background-color: rgb(203, 244, 255);
-   color: rgb(22, 136, 136);
-}
-.service-icon-1 , .service-icon-2, .service-icon-3, .service-icon-4{
-  padding: 0.5rem;
-  border-radius: 2rem;
-  font-size: 2.8rem;
-  margin: 0.5rem 0rem 0rem 3rem;
-}
-
-.service-icon-2{
-  background-color: pink;
-  color: rgb(233, 102, 124);
-}
-.service-icon-3{
-  color: rgb(216, 74, 216);
-  background-color: rgb(255, 168, 255);
-}
-.service-icon-4{
-  color: rgb(247, 96, 96);
-  background-color: rgb(247, 190, 190);
-}
-.service-icons p{
-  display: flex;
-  margin-top: 1rem;
-}
-.icon-p{
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin: 1.5rem 0rem 0rem 2rem ;
-  display: flex;
-  justify-content: start;
-}
-
 /*gallary*/
-
-.gallary{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
- 
-  padding: 5rem;
-}
-
-.gallery-img img:hover {
-  transform: scale(1.03);
-}
-
-#id-1{
-   height: 20vw;
-   width: 50%;
-}
-#id-2{
-  height: 20vw;
-  width: 45%;
-}
-#id-3{
-  width: 45%;
-}
-#id-10{
-  height: 20vw;
-  width: 20%;
-}
-#id-4{
-  height: 22vw;
-  width: 55%;
-}
-#id-6{
-width: 40%;
-}
-#id-7 , #id-8 , #id-9{
-  width: 32%;
-}
-
 /** contact*/
-
-.input-wrapper {
-  position: relative;
-  margin: 2rem 0rem 0rem 3rem ;
-  
-}
-.input-wrapper input,
-.input-wrapper textarea {
-  width: 70%;
-  padding: 1rem;
-  font-size: 1rem;
-  border: none;
-}
-#textarea {
-  width: 80%;
-}
-
-.input-wrapper span {
-position: absolute;
-  left: 1rem;
-  top: 1rem;
-  color: #545454;
-  font-size: 1rem;
-  transition: 0.3s ease;
-  pointer-events: none;
- 
-}
-input,textarea:focus {
-  border-color: #E82574;
-  outline:none;
-}
-
-
-/* When input is focused or has content */
-.input-wrapper input:focus + span,
-.input-wrapper input:not(:placeholder-shown) + span,
-.input-wrapper textarea:focus + span,
-.input-wrapper textarea:not(:placeholder-shown) + span {
-  top: -10px;
-  left: 0.3rem;
-  font-size: 1rem;
-  color: #E82574;
-  background: #fff;
-  padding: 0 5px;
-}
-
-
- 
- /** footer*/
- #hover:hover{
-  background-color: #E82574;
-  opacity: 0.8;
- }
+/** map*/
+/**footer*/

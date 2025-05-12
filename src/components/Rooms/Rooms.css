@@ -1,0 +1,151 @@
+.room-head{
+  margin: 5rem 0rem 0rem 10rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.room-head span{
+  color: #E82574;
+  font-size: 1rem;
+}
+.room-subhead{
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 3rem 0rem 0rem 10rem;
+}
+.room-cards{
+  display: flex;
+ margin-left: 5rem;
+}
+.card {
+   box-shadow: 3px 3px 2rem rgb(126, 123, 123);
+   height: 33.5vw;
+   width: 55vh;
+   margin: 5rem 0rem 0rem 3rem;
+   border-radius: 0.5rem ;
+   position: relative;
+}
+.card img{
+  height: 20vw;
+  width: 55vh;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.card img:hover{
+  transform: scale(1.03);
+}
+.room-p{
+  font-size: 1.2rem;
+  margin:  1rem 1rem;
+}
+.room-p2{
+  font-size: 1rem;
+  color: #868181;
+padding:  0rem 1rem;
+  
+}
+.room-p2 span{
+  color: #E82574;
+  font-weight: 500;
+}
+.room-btn{
+  color: #ffffff;
+  background-color: #E82574;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+.icon {
+  position: absolute;
+  bottom: 43%;
+  right: 10px;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-1 , .icon-2, .icon-3{
+  font-size: 2.5rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.icon-1:hover,
+.icon-2:hover,
+.icon-3:hover {
+  transform: scale(1.20);
+}
+.icon-1{
+  color: #fa7cae;
+}
+.icon-2{
+  color: rgb(231, 133, 231);
+}
+.icon-3{
+  color: rgb(78, 209, 245);
+}
+
+@media (max-width:768px) {
+  .room-subhead{
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 3rem 0rem 0rem 10rem;
+}
+.room-cards{
+  display: flex;
+  flex-direction: column;
+ margin-left: 5rem;
+}
+.card {
+   box-shadow: 3px 3px 2rem rgb(126, 123, 123);
+   height: 76vh;
+   width: 70vh;
+   margin: 5rem 0rem 0rem 3rem;
+   border-radius: 0.5rem ;
+   position: relative;
+}
+.card img{
+  height: 40vw;
+  width: 70vh;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+}
+@media (max-width:480px) {
+  .room-subhead{
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 3rem 0rem 0rem 2rem;
+}
+.room-cards{
+  display: flex;
+  flex-direction: column;
+ margin-left: 1rem;
+}
+.room-head{
+  margin: 5rem 0rem 0rem 5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.card {
+   box-shadow: 3px 3px 2rem rgb(126, 123, 123);
+   height: 63vh;
+   width: 50vh;
+   margin: 2rem 0rem 0rem 0.5rem;
+   border-radius: 0.5rem ;
+   position: relative;
+}
+.card img{
+  height: 50vw;
+  width: 50vh;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.icon {
+  position: absolute;
+  bottom: 58%;
+  right: 10px;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+}
+}
