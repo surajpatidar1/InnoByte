@@ -43,6 +43,7 @@ const Footer = () => {
             </div>
              
             </div>
+            <hr />
             <p className='copyright'>Copyright © 2024 Kingsukh Guest House. <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All rights reserved.</p>
          </footer>    
   )
