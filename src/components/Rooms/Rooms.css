@@ -1,60 +1,76 @@
-.room-head{
-  margin: 5rem 0rem 0rem 10rem;
+.room-head {
+  margin: 5rem 0 0 10rem;
   font-size: 1rem;
   font-weight: 400;
 }
-.room-head span{
+.room-head span {
   color: #E82574;
   font-size: 1rem;
 }
-.room-subhead{
+
+.room-subhead {
   font-size: 3rem;
   font-weight: 600;
-  margin: 3rem 0rem 0rem 10rem;
+  margin: 3rem 0 0 10rem;
 }
-.room-cards{
+
+.room-cards {
   display: flex;
- margin-left: 5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 5rem;
 }
+
 .card {
-   box-shadow: 3px 3px 2rem rgb(126, 123, 123);
-   height: 33.5vw;
-   width: 55vh;
-   margin: 5rem 0rem 0rem 3rem;
-   border-radius: 0.5rem ;
-   position: relative;
+  box-shadow: 3px 3px 2rem rgb(126, 123, 123);
+  height: 35vh;
+  width: 55vw;
+  margin: 5rem 1rem 0 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
-.card img{
-  height: 20vw;
-  width: 55vh;
-  border-radius: 0.5rem 0.5rem 0rem 0rem;
+
+.card img {
+  height: 20vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: transform 0.3s ease-in-out;
 }
-.card img:hover{
+
+.card img:hover {
   transform: scale(1.03);
 }
-.room-p{
+
+.room-p {
   font-size: 1.2rem;
-  margin:  1rem 1rem;
+  margin: 1rem;
 }
-.room-p2{
+
+.room-p2 {
   font-size: 1rem;
   color: #868181;
-padding:  0rem 1rem;
-  
+  padding: 0 1rem;
 }
-.room-p2 span{
+
+.room-p2 span {
   color: #E82574;
   font-weight: 500;
 }
-.room-btn{
-  color: #ffffff;
+
+.room-btn {
+  color: #fff;
   background-color: #E82574;
   border: none;
   padding: 0.8rem 1.2rem;
   border-radius: 0.5rem;
   font-size: 1.2rem;
   margin: 0.5rem;
+  cursor: pointer;
 }
+
 .icon {
   position: absolute;
   bottom: 43%;
@@ -64,88 +80,97 @@ padding:  0rem 1rem;
   gap: 10px;
 }
 
-.icon-1 , .icon-2, .icon-3{
+.icon-1,
+.icon-2,
+.icon-3 {
   font-size: 2.5rem;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 0.5rem;
   border-radius: 2rem;
+  transition: transform 0.3s ease-in-out;
 }
+
 .icon-1:hover,
 .icon-2:hover,
 .icon-3:hover {
-  transform: scale(1.20);
+  transform: scale(1.2);
 }
-.icon-1{
+
+.icon-1 {
   color: #fa7cae;
 }
-.icon-2{
+.icon-2 {
   color: rgb(231, 133, 231);
 }
-.icon-3{
+.icon-3 {
   color: rgb(78, 209, 245);
 }
 
-@media (max-width:768px) {
-  .room-subhead{
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 3rem 0rem 0rem 10rem;
+/* Tablet Responsive */
+@media (max-width: 768px) {
+  .room-subhead {
+    font-size: 2rem;
+    margin: 3rem 0 0 3rem;
+  }
+
+  .room-cards {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .card {
+    height: auto;
+    width: 80%;
+    margin: 3rem auto;
+  }
+
+  .card img {
+    height: auto;
+    width: 100%;
+  }
 }
-.room-cards{
-  display: flex;
-  flex-direction: column;
- margin-left: 5rem;
-}
-.card {
-   box-shadow: 3px 3px 2rem rgb(126, 123, 123);
-   height: 76vh;
-   width: 70vh;
-   margin: 5rem 0rem 0rem 3rem;
-   border-radius: 0.5rem ;
-   position: relative;
-}
-.card img{
-  height: 40vw;
-  width: 70vh;
-  border-radius: 0.5rem 0.5rem 0rem 0rem;
-}
-}
-@media (max-width:480px) {
-  .room-subhead{
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin: 3rem 0rem 0rem 2rem;
-}
-.room-cards{
-  display: flex;
-  flex-direction: column;
- margin-left: 1rem;
-}
-.room-head{
-  margin: 5rem 0rem 0rem 5rem;
-  font-size: 1rem;
-  font-weight: 400;
-}
-.card {
-   box-shadow: 3px 3px 2rem rgb(126, 123, 123);
-   height: 70vh;
-   width: 45vh;
-   margin: 2rem 0rem 0rem 0.5rem;
-   border-radius: 0.5rem ;
-   position: relative;
-}
-.card img{
-  height: 50vw;
-  width: 45vh;
-  border-radius: 0.5rem 0.5rem 0rem 0rem;
-}
-.icon {
-  position: absolute;
-  bottom: 50%;
-  right: 10px;
-  z-index: 2;
-  display: flex;
-  gap: 10px;
-}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .room-subhead {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2rem 0 0 2rem;
+  }
+
+  .room-head {
+    margin: 4rem 0 0 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .room-cards {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  .card {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .card img {
+    height: auto;
+    width: 100%;
+  }
+
+  .room-p {
+    font-size: 1rem;
+  }
+
+  .room-p2 {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    bottom: 50%;
+    right: 10px;
+  }
 }

@@ -155,7 +155,7 @@ margin: -0.4rem 1rem 0rem 2rem ;
 .contact{
   flex-direction: column;
   background-color: #E82574;
-  width: 90vw;
+  width: 100%;
 }
 .form-head{
   font-size: 1.2rem;
