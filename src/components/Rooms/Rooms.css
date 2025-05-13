@@ -113,7 +113,7 @@ padding:  0rem 1rem;
 }
 @media (max-width:480px) {
   .room-subhead{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin: 3rem 0rem 0rem 2rem;
 }
@@ -129,20 +129,20 @@ padding:  0rem 1rem;
 }
 .card {
    box-shadow: 3px 3px 2rem rgb(126, 123, 123);
-   height: 63vh;
-   width: 50vh;
+   height: 70vh;
+   width: 45vh;
    margin: 2rem 0rem 0rem 0.5rem;
    border-radius: 0.5rem ;
    position: relative;
 }
 .card img{
   height: 50vw;
-  width: 50vh;
+  width: 45vh;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 .icon {
   position: absolute;
-  bottom: 58%;
+  bottom: 50%;
   right: 10px;
   z-index: 2;
   display: flex;
